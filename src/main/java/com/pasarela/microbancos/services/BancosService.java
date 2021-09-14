@@ -5,16 +5,16 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.pasarela.microbancos.models.Banco;
-import com.pasarela.microbancos.repositories.BancoRepository;
+import com.pasarela.microbancos.models.Bancos;
+import com.pasarela.microbancos.repositories.BancosRepository;
 
 @Service
-public class BancoService {
+public class BancosService {
 
     @Autowired
-	private BancoRepository bancoRepository;
+	private BancosRepository bancoRepository;
 		
-	public List<Banco> getAllPersonas (){
+	public List<Bancos> getAllPersonas (){
 		return bancoRepository.findAll();
 	}
 

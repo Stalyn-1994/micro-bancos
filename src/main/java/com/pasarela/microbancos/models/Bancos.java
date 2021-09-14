@@ -7,7 +7,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Banco {
+public class Bancos {
     
     @Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -16,7 +16,7 @@ public class Banco {
 	private String nombre_banco;
 	
 	
-	public Banco() {
+	public Bancos() {
 		super();
 	}
 	
