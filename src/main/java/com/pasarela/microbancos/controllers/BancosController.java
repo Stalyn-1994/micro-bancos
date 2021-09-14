@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @CrossOrigin(origins = "*", methods= {RequestMethod.GET,RequestMethod.POST})
-@RequestMapping(path="/rest/bancos")
+@RequestMapping(path="/")
 public class BancosController {
     
     @Autowired
