@@ -1,5 +1,7 @@
 package com.pasarela.microbancos.repositories;
 
-public class BancoRepository {
-    
-}
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.pasarela.microbancos.models.Banco;
+
+public interface BancoRepository extends JpaRepository<Banco, Integer>{ }
