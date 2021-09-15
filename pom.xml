@@ -19,7 +19,10 @@
 	
 	<profiles>
 		<profile>
-			<id>dev</id>  	
+			<id>dev</id>  
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation> 		
 			<properties>
 				<environment>dev</environment>
 				<config.server.uri>http://localhost:8888</config.server.uri>
@@ -29,7 +32,14 @@
 			<id>prod</id>  
 			<properties>
 				<environment>prod</environment>
-				<config.server.uri>http://localhost:8888</config.server.uri>
+				<config.server.uri>http://config-server-ip-address:8888</config.server.uri>
+			</properties> 
+		</profile>
+		<profile>
+			<id>test</id>  
+			<properties>
+				<environment>test</environment>
+				<config.server.uri>http://config-server:8888</config.server.uri>
 			</properties> 
 		</profile>
 	</profiles>
