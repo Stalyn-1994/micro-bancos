@@ -32,7 +32,7 @@
 			<id>prod</id>  
 			<properties>
 				<environment>prod</environment>
-				<config.server.uri>http://config-server-ip-address:8888</config.server.uri>
+				<config.server.uri>http://54.159.180.65:8888</config.server.uri>
 			</properties> 
 		</profile>
 		<profile>
